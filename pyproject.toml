@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "most-active-cookie"
+version = "1.0.0"
+description = "Find the most active cookie in a cookie log for a given day."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools]
+py-modules = ["most_active_cookie"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
